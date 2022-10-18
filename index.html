@@ -42,7 +42,7 @@
     <section class="hat section-hat">
       <div class="container">
         <h1 class="hat-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button-hat" type="button">Замовити послугу</button>
+        <button class="button-hat" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     
@@ -369,14 +369,15 @@
         </div>
     </div>
   </footer>
-  <div class="backdrop">
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-close-btn">
-        <svg class="modal-close-icon" width="11px" height="11px">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-icon" width="18px" height="18px">
           <use href="./images/icons.svg#icon-close-btn"></use>
         </svg>
       </button>
     </div>
   </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

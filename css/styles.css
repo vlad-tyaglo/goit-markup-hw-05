@@ -491,6 +491,7 @@ img {
 }
 
 .site-nav-link {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
@@ -757,4 +758,20 @@ img {
     visibility: hidden;
     pointer-events: none;
 
+}
+
+.site-nav-link::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -1px;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.active::after{
+    opacity: 1;
 }
